@@ -28,7 +28,6 @@ print('2 hoch 3 ist', n1**n2)
 print('2 hoch 3 = ' + str(n1**n2))
 print(-n1,+n1)
 print('2 mal 3 ist', n1*n2)
-print(l1*l1)  #Kann nicht ausgeführt werden da es string mal string ist!
 print('2 mal b ist', n1*l1)
 print('2 durch 3 ist', n1/n2)
 print ('2 durch 3 hat einen rest von', n1%n2)
