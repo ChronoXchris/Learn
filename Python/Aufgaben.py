@@ -13,3 +13,45 @@ print("Hallo", firstname, lastname )
 print(type(original_string))
 
 
+
+#################################
+#           Datentypen          #
+#################################
+
+n1 = 2
+n2 = 3
+
+l1 = [(1,2,3,4,5,6,7,8,9)]
+
+print('2 hoch 3 ist', n1**n2)
+print('2 hoch 3 = ' + str(n1**n2))
+print(-n1,+n1)
+print('2 mal 3 ist', n1*n2)
+print(l1*l1)  #Kann nicht ausgeführt werden da es string mal string ist!
+print('2 mal b ist', n1*l1)
+print('2 durch 3 ist', n1/n2)
+print ('2 durch 3 hat einen rest von', n1%n2)
+print('2 durch 3 die 2 past', n1//n2,'mal rein')
+print('2 + 3 ist gleich', n1+n2)
+print('2 - 3 ist gleich', n1-n2)
+
+if n1 < n2:
+    print('Die zahl',n1 ,' ist kleiner als',n2)
+
+if n1 <= n2:
+    print('Die zahl', n1,' ist kleiner oder gleich',n2)
+
+if n1 > n2:
+    print (n1,'Ist größer als',n2)
+else:
+    print(n1,'ist nicht größer als',n2)
+
+print(n1 != n2)
+print(n1 == n2)
+print(n1 is n2)
+print(n1 is not n2)
+print(n1 in l1)
+print(n1 not in l1)
+print( not n1)
+print(n1 and n2)
+print(n1 or n2)
