@@ -5,7 +5,7 @@ aktiv = True
 
 while Try < 3:
     print('Du bist beim', Try,'Versuch')
-    Try = Try +1
+    Try += Try 
     eingabe = int(input('Pleas type a number: '))
         
     if eingabe == ratezahl:
