@@ -12,7 +12,8 @@ while player or computer < 3:
      print('Du hast Stein genommen')
     else:
      print('Du hast Papier genommen')
-#################################################################################
+#
+    
     if stp == 1:
      print('Der Computer hat Schere genommen')
     elif stp == 2:
