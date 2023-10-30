@@ -1,9 +1,9 @@
 import random
-stp = random.randint(1,3)
 #scores
 player = 0
 computer = 0
 while player or computer < 3:
+    stp = random.randint(1,3)
     eingabe = int(input('Bitte gebe 1, 2 oder 3 ein. (1=Schere 2= Stein 3=Papier) : '))
 
     if eingabe == 1:
@@ -17,7 +17,7 @@ while player or computer < 3:
      print('Der Computer hat Schere genommen')
     elif stp == 2:
      print('Der Computer hat Stein genommen')
-    else:
+    elif stp == 3:
      print('Der Computer hat Papier genommen')
 ################################################################################
     if eingabe == 1 and stp == 1:
@@ -56,16 +56,3 @@ while player or computer < 3:
     elif player == 3:
      break
      print('du hast gewonnen')
-    
-
-
-
-
-
-    
-        
-  
-
-
-
- 
