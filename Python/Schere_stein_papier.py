@@ -53,21 +53,7 @@ while player or computer < 3:
      print ('Das spiel ist vorbei und der cmoputer hat gweonnen')
     elif player == 3:
      break
-<<<<<<< HEAD
+
      print('du hast gewonnen')
-=======
+
      print('du hast gewonnen')
-    
-
-
-
-
-
-    
-        
-  
-
-
-
- 
->>>>>>> 9a0a3cc192bc8f0d99b15daa697e8f0ab1cb06f3
