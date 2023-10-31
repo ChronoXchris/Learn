@@ -20,9 +20,7 @@ while player or computer < 3:
     elif stp == 3:
      print('Der Computer hat Papier genommen')
 ################################################################################
-    if eingabe == 1 and stp == 1:
-     print('Unentschieden')
-    elif eingabe == 2 and stp == 1:
+    if eingabe == 2 and stp == 1:
      print('Du hast gewonnen')
      player = player +1
     elif eingabe == 3 and stp == 1:
@@ -32,8 +30,6 @@ while player or computer < 3:
     if eingabe == 1 and stp == 2:
      print('Der computer hat gewonnen')
      computer = computer +1
-    elif eingabe == 2 and stp == 2:
-     print('Unentschieden')
     elif eingabe == 3 and stp == 2:
      print('Du gewinnst')
      player = player +1
@@ -44,8 +40,9 @@ while player or computer < 3:
     elif eingabe == 2 and stp == 3:
      print('Der computer gweinnt')
      computer = computer +1
-    elif eingabe == 3 and stp == 3:
-     print('Unentschieden')
+    
+    if eingabe == stp:
+     print("Unentschieden")
     
     print('Dein Score ist', player)
     print('Der Score com Computer ist', computer)
