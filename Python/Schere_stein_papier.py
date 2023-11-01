@@ -48,12 +48,12 @@ while player or computer < 3:
     print('Dein Score ist', player)
     print('Der Score com Computer ist', computer)
 
-    if computer == 3:
+    if player == 3:
+     print('Du hast Gewonnen!')
      break
-     print ('Das spiel ist vorbei und der cmoputer hat gweonnen')
-    elif player == 3:
+    elif computer == 3:
+     print('Der Computer hat Gewonnen!')
      break
 
-     print('du hast gewonnen')
-     
-     print('du hast gewonnen')
+
+
