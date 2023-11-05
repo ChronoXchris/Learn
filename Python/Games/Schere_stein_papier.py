@@ -21,9 +21,9 @@ while player or computer < 3:
     elif stp == 3:
      print('Der Computer hat Papier genommen')
 ################################################################################
-    if eingabe == 2 and stp == 1:
+    if eingabe == 2 and stp == 1: 
      print('Du hast gewonnen')
-     player = player +1
+     player = player +1 # player += 1
     elif eingabe == 3 and stp == 1:
      print('Der Computer hat gewonnen')
      computer = computer +1
@@ -48,7 +48,7 @@ while player or computer < 3:
     print('Dein Score ist', player)
     print('Der Score com Computer ist', computer)
 
-    if player == 3:
+    if player == 3: # versuch mal hier mit 'else' zu definieren
      print('Du hast Gewonnen!')
      break
     elif computer == 3:
