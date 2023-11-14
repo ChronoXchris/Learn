@@ -5,7 +5,7 @@ name and a number and then display their name that
 number of times.
 '''
 
-name = str(input("Please enter your name: "))
+name = str(input("Please enter your name: ")) #without str
 number = int(input("Please enter a number: "))
 for i in range (0,number):
     print(name)
