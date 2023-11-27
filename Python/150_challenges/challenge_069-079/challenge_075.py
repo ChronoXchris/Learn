@@ -20,4 +20,4 @@ usernumber = int(input("please enter a number: "))
 if usernumber in numbers :
     print(numbers.index(usernumber))
 else:
-    print("That is not in the list!")
+    print("That is not in the list")
