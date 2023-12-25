@@ -1,8 +1,12 @@
 '''
 Challenge:
-Ask the user to enter the name, age and shoe size for four
-people. Ask for the name of one of the people in the list and
-display their age and shoe size.
+Adapt program 102
+to display the
+names and ages of
+all the people in
+the list but do not
+show their shoe
+size.
 '''
 
 list = {}
@@ -12,6 +16,5 @@ for i in range (0,4) :
     age = input("and there age: ")
     list[name] = {"Age":age,"Shoe size":shoe_size}
 
-name1 = input("Enter a name from the list: ")
-print(list[name1])
-
+for name in list:
+    print((name),list[name]["Age"])
