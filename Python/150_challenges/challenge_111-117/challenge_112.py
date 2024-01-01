@@ -8,12 +8,13 @@ end of the file. Display
 each row of the .csv file
 on a separate line.
 '''
+
 import csv
 
 file = open("Books.csv","a")
 title = input("Enter the title of the book: ")
 author = input("Enter the author: ")
-year = int(input("Enter the year: "))
+year = (input("Enter the year: "))
 newrecord = title + ", " + author + ", " + year + "\n"
 file.write(str(newrecord))
 file.close()
