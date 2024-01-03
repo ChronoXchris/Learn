@@ -7,3 +7,18 @@ which data they want to change and allow them to change it.
 Write the data back to the original .csv file, overwriting the
 existing data with the amended data.
 '''
+import csv
+
+file = open("Books.csv","r")
+for row in file:
+    print(row)
+
+row_delete = int(input("Which row do you want to delete?: "))
+
+
+
+
+
+
+
+
