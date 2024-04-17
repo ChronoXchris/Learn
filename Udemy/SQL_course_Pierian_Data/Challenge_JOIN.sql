@@ -6,6 +6,7 @@ SELECT district, email FROM customer
 INNER JOIN address
 ON address.address_id = customer.address_id
 WHERE district = 'California';
+
 --No.2 Challenge
 SELECT title, first_name, last_name FROM actor
 LEFT JOIN film_actor
