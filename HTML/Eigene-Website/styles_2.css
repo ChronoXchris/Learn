@@ -1,0 +1,75 @@
+.container1 {
+    text-align: justify;
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    background-color: bisque;
+    
+}
+
+.container1 h1 {
+    text-align: center;
+    color:darkolivegreen;
+
+}
+
+.website{
+    background-color:darkolivegreen;
+    box-shadow: 0px 0px 10px 10px;
+    padding: 20px;
+}
+
+.header  {
+    text-align: center;
+    color:aliceblue;
+    background-color: aqua;
+}
+
+.navbar {
+    background-color:bisque;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkolivegreen;
+    
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.navbar li:hover ul {
+    display: block;
+}
+
+/* Viel Spaß beim weiter Arbeiten (Kevin)*/
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+    background-color:dimgray;
+    
+}
+
+
