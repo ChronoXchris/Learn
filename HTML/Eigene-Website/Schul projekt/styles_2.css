@@ -119,6 +119,12 @@ a:hover {
     position: fixed;
     width: 100%;
     bottom: 0;
+    
+}
+
+
+.footer a:hover {
+    color: white; 
 }
 
 .video-container {
