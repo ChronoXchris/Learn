@@ -1,68 +1,47 @@
 import random
 
+from hangman_words import word_list
 
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
 
-words = [
-    "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon",
-    "mango", "nectarine", "orange", "pear", "quince", "raspberry", "strawberry", "tangerine", "ugli", "violet",
-    "watermelon", "xylophone", "yellow", "zebra", "apricot", "blueberry", "cantaloupe", "dragonfruit", "eggplant", "fig",
-    "grapefruit", "honeycrisp", "jackfruit", "kumquat", "lime", "mango", "nectar", "olive", "plum", "quinoa",
-    "rhubarb", "starfruit", "tomato", "ugli", "vanilla", "walnut", "xenon", "yogurt", "zucchini", "antelope",
-    "bamboo", "cactus", "dolphin", "eagle", "falcon", "giraffe", "hippopotamus", "iguana", "jaguar", "koala",
-    "lemur", "monkey", "nightingale", "octopus", "penguin", "quail", "rabbit", "snake", "tiger", "umbrella",
-    "vulture", "whale", "xylophone", "yak", "zebra", "airplane", "bicycle", "computer", "dragon", "engine",
-    "furniture", "guitar", "house", "island", "jacket", "keyboard", "lamp", "mountain", "notebook", "ocean",
-    "pencil", "quilt", "robot", "sunflower", "train", "unicorn", "violin", "window", "xylophone", "yacht"
-]
+end_of_game = False
+lives = 6
 
-random_word = random.choice(words)
-print(random_word)
+from hangman_art import logo
+from hangman_art import welcome
+print(welcome)
+print(logo)
 
+display = []
+for _ in range(word_length):
+    display += "_"
 
-
-word_length = len(random_word)
-
-placeholder = ""
-for position in range(word_length):
-    placeholder += "_"
-print(placeholder)
-
-
-lives = 6 
-
-correct_letter = []
-
-
-while lives >= 0:
+while not end_of_game:
     guess = input("Guess a letter: ").lower()
 
-    display = ""
+    if guess in display:
+        print(f"You've already guessed {guess}")
 
-    for letter in random_word:
+
+    for position in range(word_length):
+        letter = chosen_word[position]
         if letter == guess:
-            display += letter
-            correct_letter.append(letter)
+            display[position] = letter
 
-        elif letter in correct_letter:
-            display += letter
-         
-        else:
-            display += "_"
-            lives = lives-1
-    print(display) 
+    if guess not in chosen_word:
+        lives -= 1
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        if lives == 0:
+            end_of_game = True
+            print("You lose.")
+
+    print(f"{' '.join(display)}")
 
     if "_" not in display:
-       print("You win")
-   
+        end_of_game = True
+        print("You win.")
 
 
-
-
-
-
-
-
-
-
-
-
+    from hangman_art import stages
+    print(stages[lives])
