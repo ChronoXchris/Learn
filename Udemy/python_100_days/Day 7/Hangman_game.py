@@ -1,8 +1,8 @@
 import random
 
-from hangman_words import word_list
+from hangman_words import words
 
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(words)
 word_length = len(chosen_word)
 
 end_of_game = False
