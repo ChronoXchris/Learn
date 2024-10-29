@@ -26,7 +26,7 @@ def calculator():
             print(symbol)
         operator = input("Pick an operation: ")
         num2 = float(input("What's the second number? : "))
-        answer = print(operations[operator](num1, num2))
+        answer = (operations[operator](num1, num2))
         print(f"{num1} {operator} {num2} = {answer}")
 
         choice = input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation")
